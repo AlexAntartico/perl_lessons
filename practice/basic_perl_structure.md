@@ -3,13 +3,14 @@
 ## Comentarios
 
 - **#** para single line comment 
-- **=** para multi line comment. **=cut** final de multi line comment.
+- **=for comment** para multi line comment. **=cut** final de multi line comment.
 
 ```perl
 # Este es un single line comment
 
-= Este es un multi line comment
-comienza con = y =cut es el final del multiline comment.
+=for comment
+ Este es un multi line comment
+comienza con =for comment y =cut es el final del multiline comment.
 =cut
 ```
 
@@ -65,13 +66,14 @@ Ahora, como pasa con la automatización, solo por que puedas hacer algo no signi
 ## Comments
 
 - **#** for single line comment 
-- **=** To start multi line comment. **=cut** End of multi line comment.
+- **=for comment** To start multi line comment. **=cut** End of multi line comment.
 
 ```perl
 # This is a single line comment
 
-= This is a multi line comment
-line will start with = and =cut will be end of multiline comment.
+=for comment
+This is a multi line comment
+line will start with =for comment and =cut will be end of multiline comment.
 =cut
 ```
 
