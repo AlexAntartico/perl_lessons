@@ -3,23 +3,21 @@
 use warnings;
 use strict;
 
-my $var1 = $ARGV[0];
-my $var2 = $ARGV[1];
-my $var3 = $ARGV[2];
+print "Escribe la primera palabra:\n";
+chomp(my $palabra1 = <STDIN>);
 
-my $len_var1 = length($var1);
-my $len_var2 = length($var2);
-my $len_var3 = length($var3);
+print "Escribe la segunda palabra:\n";
+chomp(my $palabra2 = <STDIN>);
 
-print"Este programa compara tres palabras e indica la palabra mas larga\n", 
-"Ingresa tres palabras, una por una y presiona enter\n\n";
+print "Escribe la tercera palabra:\n";
+chomp(my $palabra3 = <STDIN>);
 
-
-if ($len_var1 < $len_var2 && $len_var1 < $len_var3) {
-	print"$var1 es mayor\n";
-} elsif ($len_var2 < $len_var1 && $len_var2 < $len_var3) {
-	print "$var2 es mayor\n"
+if ($palabra1 gt $palabra2 && $palabra1 gt $palabra3) {
+	print "La primera palabra: $palabra1 tiene mas caracteres\n";
+} elsif ($palabra2 gt $palabra1 && $palabra2 gt $palabra3) {
+	print "La segunda palabra:  $palabra2 tiene mas caracteres\n";
 } else {
-	print"$var3 es mayor\n";
-};
+	print "La tercera palabra: $palabra3 tiene mas caracteres\n"
+}
 
+exit;

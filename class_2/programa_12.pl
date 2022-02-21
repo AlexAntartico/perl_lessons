@@ -5,9 +5,9 @@ use strict;
 
 my $i = 0;
 
-while ($i < 5){
+for ($i..5){
 	$i++;
-	print "hola - $i\n";
+	print "#" x $i."\n";
 }
 
 exit;
