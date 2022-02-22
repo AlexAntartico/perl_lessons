@@ -1,22 +1,18 @@
 #!/usr/bin/perl
 
-use strict;
 use warnings;
+use strict;
 
-print "Escribe una frase: ";
-chomp(my $frase = <STDIN>);
-my $longitud = length($frase);
+print "Ingresa una palabra:\n";
+my $palabra = <STDIN>;
 
-my @patron = ("a", "e", "i", "o", "u");
-my $i = 0;
+print "Ingresa patron de busqueda\n";
+my $patron = <STDIN>;
 
-while ($i <= $longitud){
-	unless ((substr($frase, $i, 1)) eq /@patron/) {
-		print(substr($frase, $i, 1), "\n");
-		}
-	else {
-		print("hay una vocal @patron a en la posicion $i\n");
-	}
-	$i+=1;
+if ($palabra =~ /$patron/) {
+	print "La palabra $palabra contiene a $patron\n";
+} else {
+	print "La palabra $palabra no contiene a $patron\n";
 }
+
 exit;

@@ -3,20 +3,13 @@
 use warnings;
 use strict;
 
-my $frase = $ARGV[0];
-my $letter = "a";
-my $i = 0;
-my $longitud = length($frase);
+my $num = $ARGV[0];
 
-
- 
-while ($i <= $longitud){
-	unless ((substr($frase, $i, 1)) eq $letter) {
-		print(substr($frase, $i, 1), "\n");
-		}
-	else {
-		print("hay una letra a en la posicion $i\n");
-	}
-	$i+=1;
+unless ($num >= 9) {
+    $num++;
+    print "$num\n";
+} else {
+    print "El numero introducido no es valido, seleccione un numero del 1 al 8\n";
 }
+
 exit;

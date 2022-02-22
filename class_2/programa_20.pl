@@ -3,13 +3,22 @@
 use strict;
 use warnings;
 
-my $palabra = $ARGV[0];
-my $patron = $ARGV[1];
+print "Ingresa una palabra:\n";
+chomp (my $palabra = <STDIN>);
 
-if ($palabra =~ /$patron/) {
-    print "La palabra $palabra contriene a $patron\n";
-} else {
-    print "La palabra $palabra no contiene a $patron\n";
+my $alert_on = "a";
+my $start = 0;
+my $positions = length($palabra) - 1;
+
+
+print "length is: $positions\n";
+
+for ($start; $start <= $positions; $start++){
+    unless ((my $position = substr($palabra, $start, 1)) eq $alert_on) {
+    print "$position - $start\n";
+    } else {
+        print "hay una letra \"a\" en: la posicion; $start\n";
+    }
 }
 
 exit;
