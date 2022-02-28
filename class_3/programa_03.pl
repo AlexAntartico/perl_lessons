@@ -4,9 +4,11 @@ use strict;
 use warnings;
 
 my @numeros = (10, 34, 12, 23);
-print "$numeros[1]\n";
+my $nElementos = @numeros;
 
 my @palabras = ("uno", "dos", "tres");
-print ($palabras[2],"\n");
+my $nPosicion = @palabras;
+
+print "$nElementos\t$nPosicion\n";
 
 exit;

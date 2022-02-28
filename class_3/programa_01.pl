@@ -3,10 +3,10 @@
 use strict;
 use warnings;
 
-my @numeros = (1,2,3,4,3);
-print"@numeros";
+my @numeros = (10, 34, 12, 23);
+print"@numeros\n";
 
 my @palabras = ("uno", "dos", "tres");
-print("@palabras");
+print(@palabras,"\n");
 
 exit;
