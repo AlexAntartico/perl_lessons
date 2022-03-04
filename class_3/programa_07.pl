@@ -6,7 +6,8 @@ use strict;
 my @palabras = ("uno", "dos", "tres");
 print "@palabras\n";
 
-unshift (@palabras, "cero");
-print "@palabras\n";
+my $elemento = shift(@palabras);
+
+print "$elemento";
 
 exit;

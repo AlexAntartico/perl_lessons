@@ -1,21 +1,23 @@
 #!/usr/bin/perl
 
-use strict;
 use warnings;
+use strict;
 
-my @num = (6,7,8,9,10);
-my $new_element;
-
+my @num = (6, 7, 8, 9, 10);
 my $i = 6;
-while ($i > 1) {
+
+while ($i != 1){
     $i--;
     unshift(@num, $i);
 }
 
-print"@num\n";
+print "@num\n";
 
-my $num1 = shift(@num);
-my $num2 = shift(@num);
+my $elem1 = shift(@num);
+my $elem2 = shift(@num);
 
-print"$num1 y $num2\n";
+my @narray = ($elem1, $elem2);
+
+print "@narray\n";
+
 exit;
