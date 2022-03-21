@@ -1,12 +1,13 @@
 #!/usr/bin/perl
 
-use warnings;
 use strict;
+use warnings;
 
-print "Ingresa una frase o tu Nombre completo: \n";
+print "Ingresa tu nombre completo o cualquier frase y da enter:\n";
 my $frase = <STDIN>;
 
-print "$frase";
+my @arreglini = split(//, $frase);
 
+print "@arreglini\n";
 
 exit
