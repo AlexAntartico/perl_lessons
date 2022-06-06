@@ -40,14 +40,16 @@ print "\@numbers = @numbers\n";
 splice @numbers, 4, 1, "golden rings";
 print "\@numbers = @numbers\n";
 
-splice @numbers, -1, 1, "drummers drumming";
-print "\@numbers = @numbers\n";
-
 =for comment
 This here wont work as expected
 splice @numbers, 0, -1, 1..12;
 print "\@numbers = @numbers\n";
 =cut
+
+splice @numbers, $#numbers, 1, "drummers drumming";
+print "\@numbers = @numbers\n";
+
+# still haven't found out why the heck -1 does not wok
 
 splice @numbers, 0, 12, 1..12;
 print "\@numbers = @numbers\n";
