@@ -4,25 +4,6 @@ start with:
 perldoc perlintro
 
 
-## comments
-
-```perl
-# Inline comment
-
-## multiline comment
-
-=begin comment
-    [1] remember that die is a subroutine, you can treat as that and create a
-    loop or trigger any actions if die condition is met
-
-    [2] if you add the \n, it will remove the line where script
-    failed, useful when this will be shown to users
-    ie, try removing the \n and see:
-    at D:\Repositories\perl\lesson4\lesson4.pl line 9.
-=end comment
-=cut
-```
-
 ## Buffer overflow
 
 $|=1;

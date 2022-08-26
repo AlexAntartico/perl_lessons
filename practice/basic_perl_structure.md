@@ -12,6 +12,18 @@
  Este es un multi line comment
 comienza con =for comment y =cut es el final del multiline comment.
 =cut
+
+=begin comment
+    Also a multiline comment
+    [1] remember that die is a subroutine, you can treat as that and create a
+    loop or trigger any actions if die condition is met
+
+    [2] if you add the \n, it will remove the line where script
+    failed, useful when this will be shown to users
+    ie, try removing the \n and see:
+    at D:\Repositories\perl\lesson4\lesson4.pl line 9.
+=end comment
+=cut
 ```
 
 ## Header
@@ -23,7 +35,11 @@ Así deberias comenzar tus perl scritps:
 
 use strict;
 use warnings;
-use Data::Dumper;
+
+use Data::Dumper;  # recommended
+
+$|=1;  # recommended
+
 ```
 
 Comienza con un shebang, como es usual con sistemas linux.
@@ -75,6 +91,18 @@ Ahora, como pasa con la automatización, solo por que puedas hacer algo no signi
 This is a multi line comment
 line will start with =for comment and =cut will be end of multiline comment.
 =cut
+
+=begin comment
+    Also a multiline comment
+    [1] remember that die is a subroutine, you can treat as that and create a
+    loop or trigger any actions if die condition is met
+
+    [2] if you add the \n, it will remove the line where script
+    failed, useful when this will be shown to users
+    ie, try removing the \n and see:
+    at D:\Repositories\perl\lesson4\lesson4.pl line 9.
+=end comment
+=cut
 ```
 
 ## Header
@@ -86,7 +114,10 @@ Below is how you should start your perl scritps:
 
 use strict;
 use warnings;
-use Data::Dumper;
+
+use Data::Dumper;  # recommended
+
+$|=1;  # recommended
 ```
 
 Start with a shebang, as is usual w/linux systems.
