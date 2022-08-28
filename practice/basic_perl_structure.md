@@ -1,8 +1,17 @@
 # Perl Program Basic Structure - Español
 
+## Existe una guia de estilo similar a python pep8?
+
+No realmente, puedes consultar el libro de Larry Wall o checar los siguientes recursos:
+
+- [Perldoc Perl Style](https://www.geeksforgeeks.org/barewords-in-perl/)
+- [Apache Perl Code Style Guideliness](https://cwiki.apache.org/confluence/display/VCL/Perl+Code+Style+Guidelines)
+
+Trato de usar el Apache Style Guide tu puedes desarrollar tus propias preferencias.
+
 ## Comentarios
 
-- **#** para single line comment 
+- **#** para single line comment
 - **=for comment** para multi line comment. **=cut** final de multi line comment.
 
 ```perl
@@ -26,6 +35,18 @@ comienza con =for comment y =cut es el final del multiline comment.
 =cut
 ```
 
+## Variables
+
+Esto lo tomo del [Apache Perl Code Style Guideliness](https://cwiki.apache.org/confluence/display/VCL/Perl+Code+Style+Guidelines). Te recomiendo consultar la documentacion ya que ahi vienen ejemplos detallados. Basicamente:
+
+- Nombres de variables de una sola letra deben evitarse a menos que sea dentro del iterador de un ciclo.
+- Evitar abreviaciones
+- Separar palabras con guion bajo
+- Los nombres de sub rutinas completamente en minusculas
+    - Los nombres de variables definidas dentro de sub rutinas, completamente en minusculas
+- Los nombres de clases definidas al principio de un archivo .pm completamente en mayusculas
+- No mezclar mayusculas y minusculas aka no camelCase pls
+
 ## Header
 
 Así deberias comenzar tus perl scritps:
@@ -44,7 +65,7 @@ $|=1;  # recommended
 
 Comienza con un shebang, como es usual con sistemas linux.
 
-### use strict; 
+### use strict;
 
 Aborta la ejecución si un error es encontrado y cambia tu compilador en 3 maneras:
 
@@ -67,7 +88,7 @@ Basicamente, transforma cualquier estructura de datos a sintaxis de Perl, esto h
 Sal del **script** con una llamada a exit.
 
 ```perl
-exit;
+exit
 ```
 
 ## Notas Finales
@@ -78,6 +99,15 @@ Ahora, como pasa con la automatización, solo por que puedas hacer algo no signi
 
 
 # Perl Program Basic Structure - English
+
+## Is there an existing style guide similar to python pep8?
+
+Not really, you can check on Larry Wall's book or any of the below resources:
+
+- [Perldoc Perl Style](https://www.geeksforgeeks.org/barewords-in-perl/)
+- [Apache Perl Code Style Guideliness](https://cwiki.apache.org/confluence/display/VCL/Perl+Code+Style+Guidelines)
+
+I try to go by the Apache Style Guide but you will develop your own preferences.
 
 ## Comments
 
@@ -104,6 +134,17 @@ line will start with =for comment and =cut will be end of multiline comment.
 =end comment
 =cut
 ```
+## Variables
+
+Taking this from [Apache Perl Code Style Guideliness](https://cwiki.apache.org/confluence/display/VCL/Perl+Code+Style+Guidelines). I recommend you to check the link, you'll see detailed examples there. Basically:
+
+- Vafialbe names of a single letter should be avoided unless as a loop iterator
+- Avoid abbreviations
+- Separate words with underscore
+- Sub routine names are lowercase
+    - Names of defined variables in sub routines are lowercase
+- Class names on top of a .pm file are uppercase
+- Do not mix uppercase and lowercase, aka no camelCase pls
 
 ## Header
 
@@ -122,7 +163,7 @@ $|=1;  # recommended
 
 Start with a shebang, as is usual w/linux systems.
 
-### use strict; 
+### use strict;
 
 This will abort execution if error is found and change your compiler in 3 different ways:
 
@@ -145,7 +186,7 @@ It basically converts any data structure into Perl syntax, this makes it possibl
 Exit a **script** with a plain exit call.
 
 ```perl
-exit;
+exit
 ```
 
 ## Final takeaways
