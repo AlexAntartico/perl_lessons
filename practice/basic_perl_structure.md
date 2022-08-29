@@ -61,6 +61,14 @@ use Data::Dumper;  # recommended
 
 $|=1;  # recommended
 
+sub main {
+
+}
+
+main ();
+
+exit
+
 ```
 
 Comienza con un shebang, como es usual con sistemas linux.
@@ -159,6 +167,15 @@ use warnings;
 use Data::Dumper;  # recommended
 
 $|=1;  # recommended
+
+sub main {
+
+}
+
+main ();
+
+exit
+
 ```
 
 Start with a shebang, as is usual w/linux systems.
